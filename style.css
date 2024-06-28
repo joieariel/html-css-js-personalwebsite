@@ -422,3 +422,7 @@ footer {
 footer p {
     text-align: center;
 }
+
+.text-container p {
+   font-size: 0.85rem; 
+}
