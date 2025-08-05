@@ -1,311 +1,423 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Joie Whitmon's Personal Website</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaqueries.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
     <nav id="desktop-nav">
-        <div class="logo">Joie Whitmon</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
+      <div class="logo">Joie Whitmon</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </nav>
     <nav id="hamburger-nav">
-        <div class="logo">Joie Whitmon</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-            <!--the lines of the hamburger menu-->    
-            <span></span>
-            <span></span>
-            <span></span>
-            </div>
-            <div class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#skills" onclick="toggleMenu()">Experience</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-            </div>
-        </div> 
+      <div class="logo">Joie Whitmon</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <!--the lines of the hamburger menu-->
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
     </nav>
     <section id="profile">
-        <div class="section__pic-container">
-            <img src="./assets/profile-pic.png" alt="Joie Whitmon profile picture" />
-        </div>
-        <div class="section__text">
-            <p class="section__text__p1">Hello, I'm</p>
-            <h1 class="title">Joie Whitmon</h1>
-            <p class="section__text__p2">Computer Science Student</p>
-            <div class="btn-container">
-                <button 
-                class="btn btn-color-2"
-                onclick="window.open('./assets/Joie.Whitmon.Tech.Resume.pdf')">View Resume
-                </button> 
+      <div class="section__pic-container">
+        <img
+          src="./assets/profile-pic.png"
+          alt="Joie Whitmon profile picture"
+        />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Joie Whitmon</h1>
+        <p class="section__text__p2">Computer Science Student</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Joie.Whitmon.Tech.Resume.pdf')"
+          >
+            View Resume
+          </button>
 
-                <button 
-                class="btn btn-color-1"
-                onclick="location.href='./#contact'">Contact Info
-                </button> 
-            </div>
-            <div id="socials-container">
-                <img src="./assets/linkedin.png" alt="My LinkedIn Profile Link" class="icon" onclick="location.href='https://www.linkedin.com/in/joiewhitmon/'" />
-                <img src="./assets/github.png" alt="My GitHub Profile Link" class="icon" onclick="location.href='https://github.com/joieariel'" />
-            </div>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
         </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn Profile Link"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/joiewhitmon/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My GitHub Profile Link"
+            class="icon"
+            onclick="location.href='https://github.com/joieariel'"
+          />
+        </div>
+      </div>
     </section>
     <section id="about">
-        <p class="section__text__p1">Get To Know More</p>
-        <h1 class="title">About Me</h1>
-        <div class="section-container">
-            <div class="section__pic-container">
-                <img src="./assets/about-pic.png" alt="Picture of Joie" class="about-pic">
-            </div>
-            <div class="about-details-container">
-                <div class="about-containers">
-                    <div class="details-container">
-                        <img src="./assets/experience.png" alt="experience icon" class="icon" />
-                        <h3>Interests</h3>
-                        <p>Data Science<br />SWE <br />Cybersecurity</p>
-                    </div>
-                    <div class="details-container">
-                        <img src="./assets/education.png" alt="education icon" class="icon" />
-                        <h3>Education</h3>
-                        <p>B.S.<br />Computer Science <br />Minor in Mathematics (continuing)</p>
-                    </div>
-                </div>
-                <div class="text-container">
-                    <p>
-
-                Hey! I'm Joie, a Computer Science major with a Mathematics minor 
-                at Spelman ('27). My tech journey began with classical ballet, 
-                where I discovered the power of representation in fostering confidence
-                & success. This motivated me to address similar disparities in tech,
-                where I found myself among the few women or people of color
-                in classes & internships. Active in NSBE, SpelBots, & GWC,
-                I enhance my skills and contribute to diversifying tech through 
-                mentorship & service. Currently, I’m expanding my skills in data science, as I learn SQL & pandas. I'm excited
-                to pursue research, internships, & jobs in tech. 
-                Join me on my journey towards a more inclusive future in technology!
-
-
-                    </p>
-                </div>
-            </div>
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Picture of Joie"
+            class="about-pic"
+          />
         </div>
-        <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#skills'"/>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="experience icon"
+                class="icon"
+              />
+              <h3>Interests</h3>
+              <p>Data Science<br />SWE <br />Cybersecurity</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>
+                B.S.<br />Computer Science <br />Minor in Mathematics
+                (continuing)
+              </p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Hey! I'm Joie, a Computer Science major with a Mathematics minor
+              at Spelman ('27). My tech journey began with classical ballet,
+              where I discovered the power of representation in fostering
+              confidence & success. This motivated me to address similar
+              disparities in tech, where I found myself among the few women or
+              people of color in classes & internships. Active in NSBE,
+              SpelBots, & GWC, I enhance my skills and contribute to
+              diversifying tech through mentorship & service. Currently, I’m
+              expanding my skills in data science, as I learn SQL & pandas. I'm
+              excited to pursue research, internships, & jobs in tech. Join me
+              on my journey towards a more inclusive future in technology!
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#skills'"
+      />
     </section>
 
     <section id="skills">
-        <p class="section__text__p1">Explore My</p>
-        <h1 class="title">Skills</h1>
-        <div class="skills-details-container">
-            <div class="about-containers">
-                <div class="details-container">
-                    <h2 class="skills-sub-title">Technical Skills</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/checkmark.png" alt="skills icon" class="icon" />
-                            <div>
-                                <h3>Python</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-
-                        <article>
-                            <img src="./assets/checkmark.png" alt="skills icon" class="icon" />
-                            <div>
-                                <h3>JavaScript</h3>
-                                <p>Novice</p>
-                            </div>
-                        </article>
-
-                        <article>
-                            <img src="./assets/checkmark.png" alt="skills icon" class="icon" />
-                            <div>
-                                <h3>C++</h3>
-                                <p>Novice</p>
-                            </div>
-                        </article>
-
-                        <article>
-                            <img src="./assets/checkmark.png" alt="skills icon" class="icon" />
-                            <div>
-                                <h3>HTML</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-
-                        <article>
-                            <img src="./assets/checkmark.png" alt="skills icon" class="icon" />
-                            <div>
-                                <h3>CSS</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-
-                        <article>
-                            <img src="./assets/checkmark.png" alt="skills icon" class="icon" />
-                            <div>
-                                <h3>SQL</h3>
-                                <p>Beginner</p>
-                            </div>
-                        </article>
-
-                    </div>
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="skills-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="skills-sub-title">Technical Skills</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Intermediate</p>
                 </div>
+              </article>
 
-                <div class="details-container">
-                    <h2 class="skills-sub-title">Soft Skills</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/checkmark.png" alt="skills icon" class="icon" />
-                            <div>
-                                <h3>Problem Solving</h3>
-                              
-                            </div>
-                        </article>
-
-                        <article>
-                            <img src="./assets/checkmark.png" alt="skills icon" class="icon" />
-                            <div>
-                                <h3>Time Management</h3>
-                               
-                            </div>
-                        </article>
-
-                        <article>
-                            <img src="./assets/checkmark.png" alt="skills icon" class="icon" />
-                            <div>
-                                <h3>Communication</h3>
-                               
-                            </div>
-                        </article>
-
-                        <article>
-                            <img src="./assets/checkmark.png" alt="skills icon" class="icon" />
-                            <div>
-                                <h3>Teamwork</h3>
-                                
-                            </div>
-                        </article>
-
-                        <article>
-                            <img src="./assets/checkmark.png" alt="skills icon" class="icon" />
-                            <div>
-                                <h3>Adaptability</h3>
-                               
-                            </div>
-                        </article>
-
-                        <article>
-                            <img src="./assets/checkmark.png" alt="skills icon" class="icon" />
-                            <div>
-                                <h3>Organization</h3>
-                              
-                            </div>
-                        </article>
-
-                    </div>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Novice</p>
                 </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C++</h3>
+                  <p>Novice</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SQL</h3>
+                  <p>Beginner</p>
+                </div>
+              </article>
             </div>
-        </div>
-        <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#projects'"/>
+          </div>
 
+          <div class="details-container">
+            <h2 class="skills-sub-title">Soft Skills</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Problem Solving</h3>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Time Management</h3>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Communication</h3>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Teamwork</h3>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Adaptability</h3>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Organization</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
     </section>
 
     <section id="projects">
-        <p class="section__text__p1">Browse My Recent</p>
-        <h1 class="title">Projects</h1>
-        <div class="skills-details-container">
-            <div class="about-containers">
-            <div class="details-container color-container">
-                <div class="article-container">
-                    <img src="./assets/project-1.png" alt="Project 1 img" class="project-img" />
-                </div>
-                <h2 class="skills-sub-title project-title">Final Exam Grade Calculator</h2>
-                <div class="btn-container">
-                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/joieariel/finalexamcalculator'">
-                        Github
-                    </button>
-                    
-                    
-                </div>
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="skills-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/WiFind-SS.png"
+                alt="WiFind Project Demo"
+                class="project-img"
+              />
             </div>
-        
+            <h2 class="skills-sub-title project-title">WiFind Demo</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/joieariel/joies-capstone-project-mu.git')"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-1 project-btn"
+                onclick="window.open('https://drive.google.com/file/d/1-1HCeQDRyVMmMW8WF-5KiuUCNs-NtXL0/view?usp=drive_link')"
+              >
+                Demo Video
+              </button>
+            </div>
+          </div>
 
-        <div class="skills-details-container">
-            <div class="details-container color-container">
-                <div class="article-container">
-                    <img src="./assets/project-2.png" alt="Project 2 img" class="project-img" />
-                </div>
-                <h2 class="skills-sub-title project-title">Casino Games</h2>
-                <div class="btn-container">
-                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/joieariel/Casino-Games'">
-                        Github
-                    </button>
-                    
-                    
-                </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/fitness-streamlit.png"
+                alt="Fitness App image"
+                class="project-img"
+              />
             </div>
-        </div>
+            <h2 class="skills-sub-title project-title">Fitness App</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://jpdd-c3kykfbfka-uc.a.run.app/')"
+              >
+                Deployed Site
+              </button>
+            </div>
+          </div>
 
-        <div class="skills-details-container">
-            <div class="details-container color-container">
-                <div class="article-container">
-                    <img src="./assets/project-3.png" alt="Project 3 img" class="project-img" />
-                </div>
-                <h2 class="skills-sub-title project-title">Space Video Game</h2>
-                <div class="btn-container">
-                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/joieariel/space-video-game'">
-                        Github
-                    </button>
-                    
-                    
-                </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/kudos-board.png"
+                alt="Kudos Board Project"
+                class="project-img"
+              />
             </div>
+            <h2 class="skills-sub-title project-title">Kudos Board</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/joieariel/kudos-board.git')"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-1 project-btn"
+                onclick="window.open('https://www.loom.com/embed/c862010b392e41acb59f12cdd35360d1?sid=a06bc42d-25d7-494a-b400-4f34077cd453')"
+              >
+                Demo Video
+              </button>
+            </div>
+          </div>
         </div>
-    </div>
-        <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#skills'"/>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#skills'"
+      />
     </section>
 
     <section id="contact">
-        <p class="section__text__p1">Get in Touch</p>
-        <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
-            <div class="contact-info-container">
-                <img src="./assets/email.png" alt="email icon" class="icon contact-icon email-icon"/>
-                <p><a href="mailto:joiewhitmon@gmail.com">joiewhitmon@gmail.com</a></p>
-            </div>
-
-        <div class="contact-info-upper-container">
-            <div class="contact-info-container">
-                <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon"/>
-                <p><a href="https://www.linkedin.com/in/joiewhitmon/">LinkedIn</a></p>
-            </div>
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p>
+            <a href="mailto:joiewhitmon@gmail.com">joiewhitmon@gmail.com</a>
+          </p>
         </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/joiewhitmon/">LinkedIn</a></p>
+        </div>
+      </div>
     </section>
 
     <footer>
-        <nav>
-            <div class="nav-links-container">
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-        <p>Copyright &#169; 2024 Joie Whitmon. All Rights Reserved</p>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Joie Whitmon. All Rights Reserved</p>
     </footer>
-    <script src="script.js"></script>  
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
